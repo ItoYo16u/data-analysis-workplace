@@ -1,0 +1,11 @@
+{
+  "LanguageServerManager": {
+    "language_servers": {
+      "python": {
+        "version": 2,
+        "argv": ["python", "-m", "pyls"],
+        "languages": ["python"]
+      }
+    }
+  }
+}
