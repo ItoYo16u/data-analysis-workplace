@@ -85,6 +85,8 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget
 jupyter lab --generate-config
 sed -i -e 's/# c.ServerApp.use_redirect_file = True/c.ServerApp.use_redirect_file = False/g' ~/.jupyter/jupyter_lab_config.py
 grep use_redirect_file ~/.jupyter/jupyter_lab_config.py
-mv ./jupyter_lab_config.json ~/.jupyter/jupyter_lab_config.json
+cp ./metals-ls.json ./.venv/etc/jupyter/jupyter_server_config.d/metals-ls.json
+cp ./jupyter_lab_config.json ~/.jupyter/jupyter_lab_config.json
+
 jupyter lab
 ```
