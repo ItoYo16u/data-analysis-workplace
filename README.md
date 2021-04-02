@@ -47,7 +47,7 @@ nodebrew use v14.16.0
 
 ```bash
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-sudo add-apt-repository --remove 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/'
+sudo add-apt-repository  'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/'
 sudo apt update && sudo apt upgrade
 sudo apt install r-base
 sudo apt install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
