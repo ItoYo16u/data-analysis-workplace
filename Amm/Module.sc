@@ -1,0 +1,1 @@
+final case class Animal(weight:Double)
