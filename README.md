@@ -2,6 +2,7 @@
 
 ## required
 - ubuntu 18.x /20.x
+- cuda
 - pyenv
 - Pandoc
 - node v14.16.0 and npm
