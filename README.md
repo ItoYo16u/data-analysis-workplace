@@ -1,4 +1,5 @@
 # python/scala/R data analysis env
+Note: I recommend you use Docker-based templates https://github.com/ItoYo16u/workspace_templates 
 
 ## required
 - ubuntu 18.x /20.x
