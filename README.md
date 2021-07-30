@@ -1,4 +1,4 @@
-# python data analysis env
+# python/scala/R data analysis env
 
 ## required
 - ubuntu 18.x /20.x
@@ -11,7 +11,7 @@
 
 
 ### install pyenv
-```baash
+```bash
 sudo apt install -y \
 build-essential \
 libffi-dev \

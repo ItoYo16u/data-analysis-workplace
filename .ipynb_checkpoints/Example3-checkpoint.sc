@@ -1,0 +1,1 @@
+case class Example3(int:Int,name:String)

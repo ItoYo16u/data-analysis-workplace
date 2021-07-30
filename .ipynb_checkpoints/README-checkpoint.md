@@ -1,7 +1,8 @@
-# python data analysis env
+# python/scala/R data analysis env
 
 ## required
 - ubuntu 18.x /20.x
+- cuda
 - pyenv
 - Pandoc
 - node v14.16.0 and npm
@@ -10,7 +11,7 @@
 
 
 ### install pyenv
-```baash
+```bash
 sudo apt install -y \
 build-essential \
 libffi-dev \
@@ -47,7 +48,7 @@ nodebrew use v14.16.0
 
 ```bash
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-sudo add-apt-repository --remove 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/'
+sudo add-apt-repository  'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/'
 sudo apt update && sudo apt upgrade
 sudo apt install r-base
 sudo apt install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
@@ -85,6 +86,8 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget
 jupyter lab --generate-config
 sed -i -e 's/# c.ServerApp.use_redirect_file = True/c.ServerApp.use_redirect_file = False/g' ~/.jupyter/jupyter_lab_config.py
 grep use_redirect_file ~/.jupyter/jupyter_lab_config.py
-mv ./jupyter_lab_config.json ~/.jupyter/jupyter_lab_config.json
+cp ./metals-ls.json ./.venv/etc/jupyter/jupyter_server_config.d/metals-ls.json
+cp ./jupyter_lab_config.json ~/.jupyter/jupyter_lab_config.json
+
 jupyter lab
 ```

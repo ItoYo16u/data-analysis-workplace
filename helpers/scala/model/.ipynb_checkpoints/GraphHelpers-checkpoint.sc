@@ -1,0 +1,1 @@
+case class GraphNode(id:Int,nexts:Int*)

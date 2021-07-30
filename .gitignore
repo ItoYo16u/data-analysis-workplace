@@ -8,4 +8,5 @@
 pyenv.cfg
 .venv
 pip-selfcheck.json
-
+econometrics_hw_transcription.ipynb
+data/
