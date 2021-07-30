@@ -10,3 +10,5 @@ pyenv.cfg
 pip-selfcheck.json
 econometrics_hw_transcription.ipynb
 data/
+/**/target
+.ammonite
